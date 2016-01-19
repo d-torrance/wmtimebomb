@@ -1,0 +1,79 @@
+Maliwan's Time Bomb
+version 0.2.0
+Mine sweeper like game for WindowMaker.
+
+Compile:
+xmkmf
+make
+make install
+
+Install:
+cd to your home directory and
+mkdir .wmtimebomb
+and copy the file example.modefile in the source path into the ".wmtimebomb"
+directory and rename it to "modefile". read more description about "modefile"
+in the changelog section below.
+
+Usage: wmtimebomb -s -c -h
+-s will start timebomb with clock in its title
+-c will start timebomb with counter in its title
+
+Changelog:
+0.2.0---
+can be compiled under 0.22.0.
+add XPM.lo and hope this will allow it to run on some more 8bpp mode.
+  `rm XPM;ln -s XPM.lo XPM' before make to compile with XPM.lo. 
+change middle click's behavier, life is easier now.
+fix silly compiling bug.
+0.1.9---
+can be compiled under 0.19.0.
+fix history bug that won't add user in some case.
+0.1.8---
+a crash bug when win the game is fixed.
+fix some bugs.
+0.1.7---
+change all "bomber" to "bomb".
+use WINGs input panel to customize, display and modify records.
+will be compiled only on 0.18.0 - 0.18.1b (the recent version at the time)
+more bugs were added :P
+remove parameter -b -t -x -y. to play another mode, use the configure panel.
+add more default mode in file HOME/.wmtimebomb/modefile
+  and the format of the data in "modefile" is WIDTHxHEIGHTxBOMBxTIME, example.modefile
+  is the example.
+0.1.6---
+README is fixed :)
+restart bug is fixed.
+change executable from timebomb to wmtimebomb.
+show version number on title bar at start up.
+remove runme script
+0.1.5---
+middle mouse will allow you to open every button in every direction if
+  you already mark a number of skulls which equal to the number of bombs
+  around the place you do middle click.
+change tag order from ?->skull to skull->?.
+0.1.4---
+click on title (with the red-yellow "TIMEBOMB") will toggle clock and counter.
+also add -s and -c parameters
+right click in main window when the game is over will restart the game.
+default menu will appear only if you start timebomb with parameter(s).
+some bugs are fixed
+0.1.3---
+add mode menu.
+update icon with expose event.
+fix icon's buttons' responsibility.
+0.1.2---
+fix silly bug, use wrong variable.
+0.1.1---
+add WindowMaker menu.
+add button on dock.
+0.1.0---
+I know that my friend love this game, but she must play it on 95 and
+I can't grab any existing Linux version of mine sweeper and I just
+  buy an Xlib programming book, why not try it?
+----
+TODO:
+stop working on this :)
+----
+contact id@maliwan.org for all questions.
+latest version of maliwan's timebomb can be grabbed from
+http://www.maliwan.org/freewares.shtml

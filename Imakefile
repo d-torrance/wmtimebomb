@@ -1,0 +1,10 @@
+XPMLIB = -L/usr/X11R6/lib -lXpm -lm -ljpeg -lpng -lz -ltiff -lgif
+WMAKER = -L/usr/local/lib -lWMaker -lWINGs -lwraster -lPropList
+ 
+LOCAL_LIBRARIES = $(WMAKER) $(XPMLIB) $(XLIB)
+
+SRCS = timebomb.c
+OBJS = timebomb.o
+
+ComplexProgramTarget(wmtimebomb)
+
